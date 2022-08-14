@@ -38,11 +38,22 @@ const ParticlesComponent = (props) => {
             quantity: 10, // number of particles to add on click
           },
           repulse: {
-            distance: 50, // distance of the particles from the cursor
+            distance: 200, // distance of the particles from the cursor
           },
         },
       },
       particles: {
+        color: {
+          value: "#0DC8A6",
+      },
+      number: {
+        density: {
+            enable: true,
+            area: 800,
+        },
+        value: 80,
+    },
+
         links: {
           enable: true, // enabling this will make particles linked together
           distance: 200, // maximum distance for linking the particles
