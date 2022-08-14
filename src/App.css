@@ -1,5 +1,5 @@
 .container {
-  font-family: 'Poppins', sans-serif;  ;
+  font-family: 'Poppins', sans-serif;
 }
 .content {
   position: relative;
@@ -42,11 +42,6 @@
   color: white;
 }
 
-.about__container {
-  width: 400px;
-  height: 500px;
-  background-color: red;
-}
 
 .toggles {
   position: absolute;
@@ -74,7 +69,7 @@
   color: white;
   padding: 30px;
   position: absolute;
-  width: 800px;
+  width: 40%;
   background-color: #2B2D35;
   left: 50%;
   top: 50%;
@@ -91,7 +86,7 @@
   color: white;
   padding: 30px;
   position: absolute;
-  width: 800px;
+  width: 40%;
   background-color: #2B2D35;
   left: 50%;
   top: 50%;
@@ -171,4 +166,174 @@
 .closeBtn__icon {
   font-size: 30px;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+  }
+  .content p {
+    text-align: center;
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content__logo {
+    font-size: 120px;
+    color: white;
+  }
+  
+  .content__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+  .content__footer div {
+    padding: 0 20px;
+  }
+  .icon {
+    font-size: 30px;
+    color: white;
+  }
+  
+  
+  .toggles {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .toggles div {
+    color: white;
+    height: 20px;
+    writing-mode:horizontal-tb;
+    background-color: #2B2D35;
+    text-align: center;
+    padding: 10px 25px;
+    cursor: pointer;
+  }
+  .toggles div:hover {
+    background-color: #3B3D45;
+  }
+  
+  .about__container {
+    color: white;
+    padding: 30px;
+    position: absolute;
+    width: 80%;
+    background-color: #2B2D35;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 2px solid #0DC8A6;;
+  }
+  
+  .about__container--deactive {
+    display: none;
+  }
+  
+  .contact__container {
+    color: white;
+    padding: 30px;
+    position: absolute;
+    width: 80%;
+    background-color: #2B2D35;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    border: 2px solid #0DC8A6;;
+  }
+  
+  
+  .contact__container--deactive {
+    display: none;
+  }
+  
+  .about__content h2,
+  .contact__container h2 {
+    font-size: 36px;
+  }
+  
+  
+  .contact__container h2 {
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  .form {
+    width: 100%;
+    padding: 5px;
+    background-color: #F2F3F7;
+  }
+  .form input, textarea {
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 10px 0px 10px 0px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    width: 100%;
+  }
+  
+  .firstInputBox {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .primaryInputBox {
+    width: 40%;
+  }
+  .secondaryInputBox {
+    width: 45%;
+  }
+  .inputBox {
+    margin-top: 15px;
+  }
+  .inputBox input, textarea{
+    width: 100%;
+  }
+  
+  .sendButton {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .sendButton button {
+    width: 100%;
+    background-color: #0DC8A6;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    color: white;
+    font-size: 16px;
+  }
+  .closeBtn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+  }
+  .closeBtn__icon {
+    font-size: 30px;
+    color: white;
+  }
 }

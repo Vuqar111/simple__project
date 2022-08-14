@@ -1,5 +1,6 @@
 import React from "react";
 import {AiOutlineClose} from 'react-icons/ai';
+// import { useForm, ValidationError } from '../../node_modules/@formspree/react';
 
 const Contact = (props) => {
   
