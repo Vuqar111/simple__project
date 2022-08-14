@@ -7,7 +7,7 @@ const About = (props) => {
         <div className="about__content">
             <h2>About</h2>
             <p>
-                Perfect and awesome template to present your future product or
+                Perfect4 and awesome template to present your future product or
                 service. Hooking audience attention is all in the opener.
                 Perfect and awesome template to present your future product or
                 service. Hooking audience attention is all in the opener.
